@@ -21,7 +21,7 @@ def userExist(username):
     else:
         return False
 
-@app.route("/acess",methods=["GET"])
+@app.route("/",methods=["GET"])
 def acess():
     prev = count.find({})[0]['count']
     newb = prev + 1
